@@ -1,0 +1,247 @@
+%% main-short.tex — Your Name
+%% Two-page CV using short-CV.cls
+%% Template — fill in your details below.
+
+\documentclass{short-CV}
+
+\cvname{Levi Ackerman}
+\cvemail{levi.ackerman@university.edu}
+\cvwebsite{levi-ackerman.github.io}
+
+%% Semibold author name shortcut — replace with your name
+\renewcommand{\Me}{\cvme{Levi Ackerman}}
+
+\begin{document}
+\maketitle
+
+% --------------------------------------------------------
+% RESEARCH VISION (optional — remove if not needed)
+% 2-3 sentences on your research focus and goals.
+% --------------------------------------------------------
+\section{Research Vision}
+
+My research focuses on [your research area] --- building [instruments/methods/systems]
+that [what they do] where conventional approaches fail. I am driven by making
+[precision / scalable / accessible] [sensing / computation / ...] deployable
+where it is needed most.
+
+% --------------------------------------------------------
+\section{Experience}
+% --------------------------------------------------------
+
+%% \cventry{Institution}{Department}{Role}{Date}
+\cventry
+  {University Name}
+  {Department of X}
+  {Postdoctoral Researcher \enspace\textbar\enspace \textit{Advised by Prof.\ Advisor Name}}
+  {2025 -- Present}
+
+\cventry
+  {Organization Name}
+  {Division or Group}
+  {Role \enspace\textbar\enspace \textit{Brief description of work}}
+  {2022 -- 2025}
+
+\cventry
+  {Company Name}
+  {Department}
+  {Role \enspace\textbar\enspace \textit{Brief description}}
+  {2019 -- 2022}
+
+% --------------------------------------------------------
+\section{Education}
+% --------------------------------------------------------
+
+%% \cvedu{Institution}{Degree | Supervisor}{Date}
+\cvedu
+  {University Name}
+  {PhD in Field \enspace\textbar\enspace \textit{Advised by Prof.\ Advisor Name}}
+  {2020 -- 2025}
+
+\cvedu
+  {University Name}
+  {M.S. in Field \enspace\textbar\enspace \textit{Advised by Prof.\ Advisor Name}}
+  {2018 -- 2020}
+
+\cvedu
+  {University Name}
+  {B.Tech / B.S. in Field}
+  {2014 -- 2018}
+
+% --------------------------------------------------------
+\section{Awards}
+% --------------------------------------------------------
+
+%% \cvaward{Title}{Organization}{Amount or detail}{Year}{URL or {}}
+\cvaward
+  {Award Name}
+  {Awarding Organization}
+  {Detail or amount}
+  {2025}
+  {https://award-url.org}
+
+\cvaward
+  {Fellowship Name}
+  {Awarding Organization}
+  {}
+  {2024}
+  {}
+
+\cvaward
+  {Best Paper Award}
+  {Conference Name}
+  {500 USD}
+  {2023}
+  {}
+
+% --------------------------------------------------------
+\section{Select Publications}
+% --------------------------------------------------------
+
+%% \cvpubshort{Authors}{Title}{Venue Year}{URL or {}}
+%% Use \Me for your name (semibold), e.g.: \Me, A Author, B Author
+\cvpubshort
+  {\Me, A Author, B Author}
+  {Title of Paper One}
+  {Journal / Conference 2025}
+  {https://doi.org/...}
+
+\cvpubshort
+  {A Author, \Me, B Author}
+  {Title of Paper Two}
+  {Journal / Conference 2024}
+  {https://doi.org/...}
+
+%% For papers with awards, use \cvpubshortaward:
+%% \cvpubshortaward{Authors}{Title}{Venue}{URL}{Award note}
+\cvpubshortaward
+  {\Me, A Author}
+  {Title of Awarded Paper}
+  {Conference 2023}
+  {https://doi.org/...}
+  {Best paper award}
+
+\cvpubshort
+  {\Me, A Author}
+  {Title of Paper Three}
+  {Conference 2022}
+  {https://doi.org/...}
+
+\vspace{3pt}
+\noindent{\small\textit{Other Publications}}
+\vspace{1pt}
+
+\cvpubshort
+  {\Me}
+  {PhD Dissertation Title}
+  {PhD Dissertation}
+  {https://link-to-dissertation}
+
+\vspace{3pt}
+\noindent{\small\textit{Under Review}}
+\vspace{1pt}
+
+%% \cvpubreviewshort{Authors}{Title}{Venue or {}}
+\cvpubreviewshort
+  {\Me, A Author, B Author}
+  {Title of Paper Under Review}
+  {}
+
+\cvpubreviewshort
+  {A Author, \Me}
+  {Another Paper Under Review}
+  {}
+
+% --------------------------------------------------------
+\section{Funding}
+% --------------------------------------------------------
+
+%% \cvgrant{Title}{Funder}{Detail}{Outcome}{Year}
+%% Outcome: pass {} if awarded, or "Not selected", "Finalist", etc.
+\cvgrant
+  {Grant Title}
+  {Funding Body}
+  {Co-PI: Prof.\ Name}
+  {Awarded}
+  {2025}
+
+\cvgrant
+  {Grant Title}
+  {Funding Body}
+  {}
+  {Not selected}
+  {2024}
+
+% --------------------------------------------------------
+\section{Talks}
+% --------------------------------------------------------
+
+%% \cvtalktitle{Talk Title}
+%% \cvtalkentry{Venue}{Note}{Location}{Year}
+%% Note and Location: pass {} to omit
+\cvtalktitle{Title of Talk One}
+\cvtalkentry{Conference or Seminar Name}{Invited Talk}{City / Institution}{2025}
+\cvtalkentry{Another Venue}{}{Institution}{2025}\cvtalkend
+
+\cvtalktitle{Title of Talk Two}
+\cvtalkentry{Seminar Name}{hosted by Prof.\ Host}{Institution}{2024}\cvtalkend
+
+\cvtalktitle{Title of Talk Three}
+\cvtalkentry{Workshop Name}{}{Institution}{2023}\cvtalkend
+
+% --------------------------------------------------------
+\section{Teaching}
+% --------------------------------------------------------
+
+%% \cvgrant{Course}{Institution}{Role}{}{Year}
+\cvgrant
+  {COURSE 101: Course Title}
+  {University Name}
+  {Teaching Assistant}
+  {}
+  {2024, 2025}
+
+\cvgrant
+  {Topic Name}
+  {University Name}
+  {Guest / Tutorial Lecture}
+  {}
+  {2023}
+
+% --------------------------------------------------------
+\section{Mentoring}
+% --------------------------------------------------------
+
+%% Free-form paragraph — list students with institution and year.
+\noindent{\small
+Student One, Student Two (Institution, Year) $\cdot$
+Student Three (Institution, Year) $\cdot$
+Student Four --- undergraduate research (Institution, Year).
+}
+
+% --------------------------------------------------------
+\section{Service}
+% --------------------------------------------------------
+
+\cvgrant
+  {Organization Name}
+  {Committee or Division Name}
+  {Role}
+  {}
+  {2024 -- Present}
+
+\cvgrant
+  {Conference Name}
+  {Session or Track Name}
+  {Session Chair / Organizer}
+  {}
+  {2025}
+
+\vspace{3pt}
+\noindent{\small\textbf{Reviewed for:}\enspace
+Journal One $\cdot$
+Journal Two $\cdot$
+Conference One $\cdot$
+Conference Two}
+
+\end{document}

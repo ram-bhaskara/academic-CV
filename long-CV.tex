@@ -1,0 +1,269 @@
+%% main.tex — Your Name
+%% Long-form academic CV using long-CV.cls
+%% Template — replace all placeholder content with your own details.
+%%
+%% Commands reference:
+%%   \cventry{Institution}{Department}{Role}{Date}
+%%   \cvedu{Institution}{Degree | Supervisor}{Date}
+%%   \cvsimpleentry{Left text}{Right text}
+%%   \cvpub{Title}{Authors}{Venue}{URL}{Award note or {}}
+%%   \cvpubreview{Title}{Authors}{Venue}
+%%   \cvaward{Title}{Org}{Detail}{Year}{URL or {}}
+%%   \cvgrant{Title}{Funder}{Detail}{Outcome}{Year}
+%%   \cvtalktitle{Title}
+%%   \cvtalkentry{Venue}{Note}{Location}{Date}
+%%   \cvtalkend  (gap after a talk group)
+%%   \cvstudent{Name}{Role}{Years}
+%%   \cvnews{Headline}{Source}{Date}
+%%   \Me  (semibold author name — set via \renewcommand below)
+
+\documentclass{long-CV}
+
+%% -------------------------------------------------------
+%% Personal info — update these three lines
+%% -------------------------------------------------------
+\cvname{Levi Ackerman}
+\cvemail{levi.ackerman@university.edu}
+\cvwebsite{levi-ackerman.github.io}
+
+%% Semibold name shortcut for publication author lists
+\renewcommand{\Me}{\cvme{Levi Ackerman}}
+
+\begin{document}
+\maketitle
+
+% --------------------------------------------------------
+\section{Academic Appointments}
+% --------------------------------------------------------
+
+%% \cventry{Institution}{Department}{Role}{Date}
+\cventry
+  {University Name}
+  {Department of X}
+  {Postdoctoral Researcher \enspace\textbar\enspace \textit{Advised by Prof.\ Advisor Name}}
+  {2025 -- Present}
+
+\cventry
+  {University Name}
+  {Department of Y}
+  {Role Title}
+  {2022 -- 2025}
+
+% --------------------------------------------------------
+\section{Education}
+% --------------------------------------------------------
+
+%% \cvedu{Institution}{Degree | Supervisor}{Date}
+\cvedu
+  {University Name}
+  {PhD in Field \enspace\textbar\enspace \textit{Advised by Prof.\ Advisor Name}}
+  {2020 -- 2025}
+
+\cvedu
+  {University Name}
+  {M.S. in Field \enspace\textbar\enspace \textit{Advised by Prof.\ Advisor Name}}
+  {2018 -- 2020}
+
+\cvedu
+  {University Name}
+  {B.Tech / B.S. in Field}
+  {2014 -- 2018}
+
+% --------------------------------------------------------
+\section{Awards}
+% --------------------------------------------------------
+
+%% \cvaward{Title}{Organization}{Detail or amount}{Year}{URL or {}}
+\cvaward
+  {Award Name}
+  {Awarding Organization}
+  {Detail or amount}
+  {2025}
+  {https://award-url.org}
+
+\cvaward
+  {Fellowship Name}
+  {Awarding Organization}
+  {}
+  {2024}
+  {}
+
+\cvaward
+  {Best Paper Award}
+  {Conference Name}
+  {500 USD}
+  {2023}
+  {}
+
+% --------------------------------------------------------
+\section{Other Research Experience}
+% --------------------------------------------------------
+
+\cvedu
+  {Organization Name}
+  {Division \enspace\textbar\enspace \textit{Role}}
+  {2022, 2023}
+
+\cvedu
+  {Company Name}
+  {Department \enspace\textbar\enspace \textit{Role}}
+  {2017 -- 2019}
+
+% --------------------------------------------------------
+\section{Publications}
+% --------------------------------------------------------
+
+%% \cvpub{Title}{Authors}{Venue}{URL}{Award note or {}}
+%% Use \Me for your name in author lists.
+\cvpub
+  {Title of Paper One}
+  {\Me, Author Two, Author Three}
+  {Journal / Conference 2025}
+  {https://doi.org/...}
+  {}
+
+\cvpub
+  {Title of Awarded Paper}
+  {\Me, Author Two}
+  {Conference 2023}
+  {https://doi.org/...}
+  {Best paper award}
+
+\medskip
+\noindent\textbf{\textit{Under Review}}
+
+%% \cvpubreview{Title}{Authors}{Venue}
+\cvpubreview
+  {Title of Paper Under Review}
+  {\Me, Author Two, Author Three}
+  {Journal Name 2026}
+
+% --------------------------------------------------------
+\section{Other Publications}
+% --------------------------------------------------------
+
+\cvpub
+  {Dissertation Title}
+  {\Me}
+  {PhD Dissertation, supervised by Prof.\ Advisor Name}
+  {https://link-to-dissertation}
+  {}
+
+% --------------------------------------------------------
+\section{Talks}
+% --------------------------------------------------------
+
+%% \cvtalktitle{Title}
+%% \cvtalkentry{Venue}{Note}{Location}{Date}  — Note and Location: pass {} to omit
+\cvtalktitle{Title of Talk One}
+\cvtalkentry{Conference Name}{Invited Talk}{City / Institution}{2025}
+\cvtalkentry{Seminar Name}{}{Institution}{2025}\cvtalkend
+
+\cvtalktitle{Title of Talk Two}
+\cvtalkentry{Workshop Name}{hosted by Prof.\ Host}{Institution}{2024}\cvtalkend
+
+% --------------------------------------------------------
+\section{Funding Applications}
+% --------------------------------------------------------
+
+%% \cvgrant{Title}{Funder}{Detail}{Outcome}{Year}
+%% Outcome: pass {} if awarded, or "Not selected", "Finalist", etc.
+\cvgrant
+  {Grant Title}
+  {Funding Body}
+  {Co-PI: Prof.\ Name}
+  {Awarded}
+  {2025}
+
+\cvgrant
+  {Grant Title}
+  {Funding Body}
+  {}
+  {Not selected}
+  {2024}
+
+% --------------------------------------------------------
+\section{Academic Service}
+% --------------------------------------------------------
+
+\cvgrant
+  {Organization Name}
+  {Committee or Division Name}
+  {Role}
+  {}
+  {2024 -- Present}
+
+\cvgrant
+  {Conference Name}
+  {Session or Track Name}
+  {Session Chair}
+  {}
+  {2025}
+
+% --------------------------------------------------------
+\section{Reviews}
+% --------------------------------------------------------
+
+%% \cvsimpleentry{Journal / Conference name}{Year(s)}
+\cvsimpleentry{Journal Name One}{2025}
+\cvsimpleentry{Journal Name Two}{2024, 2025}
+\cvsimpleentry{Conference Name}{2022 -- 2025}
+
+% --------------------------------------------------------
+\section{Teaching}
+% --------------------------------------------------------
+
+\cvgrant
+  {COURSE 101: Course Title}
+  {University Name}
+  {Teaching Assistant}
+  {}
+  {2024, 2025}
+
+\cvgrant
+  {Topic Name}
+  {University Name}
+  {Guest / Tutorial Lecture}
+  {}
+  {2023}
+
+% --------------------------------------------------------
+\section{Mentoring}
+% --------------------------------------------------------
+
+%% Option A: use \cvgrant for individual entries
+\cvgrant
+  {Student Name}
+  {University Name}
+  {PhD / MS / UG research in topic}
+  {}
+  {2025 -- Present}
+
+%% Option B: use \cvstudent for named advisees
+%% \cvstudent{Name}{Role}{Years}
+\cvstudent
+  {Student Name}
+  {PhD Student, University Name}
+  {2024 -- Present}
+
+% --------------------------------------------------------
+\section{Volunteering}
+% --------------------------------------------------------
+
+\cvgrant
+  {Organization Name}
+  {Event Name}
+  {Role Description}
+  {}
+  {2025}
+
+% --------------------------------------------------------
+\section{Software}
+% --------------------------------------------------------
+
+%% \cvsimpleentry{Description with link}{Year}
+\cvsimpleentry
+  {\textbf{TOOLNAME}: Brief description of what it does~\href{https://github.com/...}{\small\faExternalLink*}}
+  {2024}
+
+\end{document}
